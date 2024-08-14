@@ -28,3 +28,21 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Custom styles */
+.screenshot {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+.heroBanner {
+  background-color: #282c34;
+  color: white;
+  padding: 40px 0;
+}
+
+.features h2 {
+  color: #0066ff;
+  font-size: 1.5rem;
+}

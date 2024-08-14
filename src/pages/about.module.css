@@ -1,0 +1,40 @@
+.teamSection, .contributorsSection, .communicationSection {
+  padding: 40px 0;
+}
+
+.teamMembers, .contributors {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.teamMember, .contributor {
+  text-align: center;
+  margin: 20px;
+}
+
+.teamMember img, .contributor img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.communicationLinks {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.communicationLinks li {
+  margin: 10px 0;
+}
+
+.communicationLinks a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.communicationLinks a:hover {
+  text-decoration: underline;
+}

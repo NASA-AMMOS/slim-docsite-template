@@ -4,32 +4,56 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Seamless Integration',
+    Svg: () => <img src="/img/200x200.svg" alt="Seamless Integration" />, // Placeholder image
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Our product integrates effortlessly with your existing systems, ensuring a smooth and hassle-free setup.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'High Performance',
+    Svg: () => <img src="/img/200x200.svg" alt="High Performance" />, // Placeholder image
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Experience lightning-fast performance and reliable uptime, so your business can keep moving at full speed.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Customizable',
+    Svg: () => <img src="/img/200x200.svg" alt="Customizable" />, // Placeholder image
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Tailor the product to your exact needs with our flexible customization options, empowering you to create the perfect solution.
+      </>
+    ),
+  },
+  {
+    title: 'Robust Security',
+    Svg: () => <img src="/img/200x200.svg" alt="Robust Security" />, // Placeholder image
+    description: (
+      <>
+        Protect your data with our industry-leading security features, ensuring your information remains safe and secure.
+      </>
+    ),
+  },
+  {
+    title: 'User-Friendly Interface',
+    Svg: () => <img src="/img/200x200.svg" alt="User-Friendly Interface" />, // Placeholder image
+    description: (
+      <>
+        Enjoy a simple, intuitive interface designed for users of all skill levels, making it easy to get started right away.
+      </>
+    ),
+  },
+  {
+    title: '24/7 Support',
+    Svg: () => <img src="/img/200x200.svg" alt="24/7 Support" />, // Placeholder image
+    description: (
+      <>
+        Our dedicated support team is available around the clock to assist you with any questions or issues you may encounter.
       </>
     ),
   },
