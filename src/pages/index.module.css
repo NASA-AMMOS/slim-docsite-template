@@ -1,23 +1,123 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
+  padding: 6rem 0;
+  text-align: left; /* Left-align text */
   position: relative;
   overflow: hidden;
+  background-color: #00467a;
+  color: white;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.heroBanner h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.heroBanner p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .buttons {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* Align buttons to the left */
+  gap: 1rem;
+}
+
+.screenshotContainer {
+  margin-top: 2rem;
+  text-align: left; /* Align screenshot to the left */
+}
+
+.screenshot {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.customerLogos, .testimonials, .productVideo, .sponsors {
+  padding: 4rem 0;
+  background-color: #f5f5f5;
+}
+
+.logos {
+  display: flex;
+  justify-content: flex-start; /* Align logos to the left */
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.quotes {
+  display: flex;
+  justify-content: flex-start; /* Align quotes to the left */
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.quotes blockquote {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #333;
+  max-width: 800px;
+  margin: 0;
+}
+
+.quotes cite {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+.productVideo .videoWrapper {
+  max-width: 900px;
+  margin: 0; /* Align video to the left */
+}
+
+.getStarted, .learnMore {
+  padding: 60px 0;
+  background-color: #f5f5f5;
+}
+
+.getStartedContent {
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  flex-wrap: wrap;
+}
+
+.getStartedContent div {
+  flex: 1;
+  margin: 0px 0px;
+}
+
+.learnMoreList {
+  list-style: none;
+  padding: 0;
+  text-align: left; /* Align list to the left */
+}
+
+.learnMoreList li {
+  margin: 10px 0;
+}
+
+.learnMoreList .link {
+  color: #00467a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.learnMoreList .link:hover {
+  text-decoration: underline;
+}
+
+.getStarted .link, .learnMore .link {
+  color: #0073b1;
+  text-decoration: none;
+}
+
+.getStarted .link:hover, .learnMore .link:hover {
+  text-decoration: underline;
 }

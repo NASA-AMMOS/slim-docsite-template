@@ -4,29 +4,32 @@
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. */
+/* Override the default Infima variables */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #005b96; /* Updated primary color to match PDF style */
+  --ifm-color-primary-dark: #00467a;
+  --ifm-color-primary-darker: #003865;
+  --ifm-color-primary-darkest: #00294f;
+  --ifm-color-primary-light: #0073b1;
+  --ifm-color-primary-lighter: #0086cc;
+  --ifm-color-primary-lightest: #0099e6;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.05); /* Softer background for highlighted code lines */
+  --ifm-font-family-base: 'Open Sans', sans-serif; /* A clean, modern font */
+  --ifm-heading-font-weight: 600; /* Slightly bolder headings */
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Adjustments for dark mode */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #66b2ff; /* Lighter, more vibrant blue for dark mode */
+  --ifm-color-primary-dark: #4d9de0;
+  --ifm-color-primary-darker: #3388cc;
+  --ifm-color-primary-darkest: #1a73b2;
+  --ifm-color-primary-light: #80c6ff;
+  --ifm-color-primary-lighter: #99d4ff;
+  --ifm-color-primary-lightest: #b3e2ff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-font-family-base: 'Open Sans', sans-serif;
 }
 
 /* Custom styles */
@@ -37,12 +40,120 @@
 }
 
 .heroBanner {
-  background-color: #282c34;
-  color: white;
+  background-color: #00467a; /* Darker blue background for the hero banner */
+  color: #ffffff; /* Ensure text is white for readability */
+  padding: 60px 0; /* Increased padding for a more spacious layout */
+  text-align: center; /* Center-align text to match the PDF's clean layout */
+}
+
+.heroBanner h1 {
+  font-size: 2.5rem; /* Larger font size for the main title */
+  font-weight: 700; /* Bold title */
+  color: #ffffff; /* Ensure text is white for readability */
+}
+
+.heroBanner p {
+  font-size: 1.2rem; /* Slightly larger subtitle */
+  margin-top: 20px;
+  color: #ffffff; /* Ensure text is white for readability */
+}
+
+.features {
+  background-color: #f5f5f5; /* Light grey background to separate sections */
   padding: 40px 0;
 }
 
 .features h2 {
-  color: #0066ff;
-  font-size: 1.5rem;
+  color: #00467a; /* Primary dark blue for feature headings */
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.features .text--center {
+  text-align: center;
+}
+
+.features p {
+  color: #333; /* Darker text for better readability */
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 60px 0; /* Consistent padding for all sections */
+}
+
+.section h2 {
+  font-size: 2rem; /* Larger section titles */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.section p {
+  font-size: 1.2rem; /* Larger text for better readability */
+  color: #555; /* Softer text color for general content */
+}
+
+.sectionTitle {
+  font-size: 2rem; /* Consistent section title size */
+  color: #00467a; /* Dark blue color for section titles */
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+/* Button styles to ensure readability */
+.button--primary {
+  background-color: #0073b1; /* Primary button color */
+  color: #ffffff; /* White text for contrast */
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button--primary:hover {
+  background-color: #005b96; /* Darker shade on hover */
+  color: #ffffff; /* Ensure text remains white for readability */
+}
+
+.button--secondary {
+  background-color: #025c8d; /* Secondary button darker background */
+  color: #ffffff !important; /* White text for contrast */
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button--secondary:hover {
+  background-color: #003865; /* Darker shade on hover */
+  color: #ffffff; /* Ensure text remains white for readability */
+}
+
+/* Darker buttons in dark mode should have lighter text */
+[data-theme='dark'] .button--primary, [data-theme='dark'] .button--secondary {
+  color: #ffffff; /* White text for readability */
+}
+
+[data-theme='dark'] .button--primary:hover, [data-theme='dark'] .button--secondary:hover {
+  color: #ffffff; /* Ensure text remains white for readability on hover */
+}
+
+.sectionTitle {
+  text-align: left; /* Align section titles to the left */
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #00467a;
 }

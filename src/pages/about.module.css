@@ -1,10 +1,12 @@
 .teamSection, .contributorsSection, .communicationSection {
-  padding: 40px 0;
+  padding: 60px 0; /* Increased padding for a more spacious feel */
+  background-color: #f5f5f5; /* Light background color for all sections */
 }
 
 .teamMembers, .contributors {
   display: flex;
-  justify-content: space-around;
+  justify-content: center; /* Center align the content */
+  gap: 2rem; /* Space between team members/contributors */
   flex-wrap: wrap;
 }
 
@@ -18,6 +20,22 @@
   width: 150px;
   height: 150px;
   object-fit: cover;
+  margin-bottom: 1rem; /* Added space below images for better layout */
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  color: #00467a; /* Dark blue color matching PDF style */
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 700; /* Bold and prominent titles */
+}
+
+.sectionSubtitle {
+  font-size: 1.25rem;
+  color: #555; /* Softer gray for subtitles */
+  text-align: center;
+  margin-bottom: 3rem; /* Added space below subtitles */
 }
 
 .communicationLinks {
@@ -31,10 +49,23 @@
 }
 
 .communicationLinks a {
-  color: #007bff;
+  color: #00467a; /* Updated color to match PDF style */
+  font-weight: 600; /* Bolder font for better visibility */
   text-decoration: none;
 }
 
 .communicationLinks a:hover {
   text-decoration: underline;
+}
+
+/* General styling for consistent spacing and alignment */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mainContent {
+  padding: 4rem 0;
+  background-color: #ffffff; /* White background for a clean look */
 }

@@ -75,6 +75,7 @@ const config = {
         logo: {
           alt: 'Product Logo',
           src: 'img/logo.svg',
+          href: '/', // Ensure clicking the logo returns to the homepage
         },
         items: [
           {
@@ -82,11 +83,6 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Docs',
-          },
-          {
-            to: '/api', // You'll need to create this API page
-            label: 'API',
-            position: 'left',
           },
           {to: '/blog', label: 'News/Blog', position: 'left'},
           {to: '/about', label: 'About', position: 'left'},
@@ -100,20 +96,18 @@ const config = {
             position: 'right',
           },
         ],
+        style: 'dark', // Ensure the navbar uses a darker theme for a more professional look
+        hideOnScroll: true, // Add hide on scroll to give a cleaner experience
       },
       footer: {
-        style: 'dark',
+        style: 'dark', // Keep a consistent dark footer theme
         links: [
           {
             title: 'Resources',
             items: [
               {
-                label: 'Docs',
+                label: 'Documentation',
                 to: '/docs/intro',
-              },
-              {
-                label: 'API',
-                to: '/api',
               },
               {
                 label: 'Blog',
@@ -142,17 +136,26 @@ const config = {
             title: 'Contact',
             items: [
               {
-                label: 'Email',
+                label: 'Email Us',
                 href: 'mailto:contact@yourdomain.com',
               },
             ],
           },
         ],
+        logo: {
+          alt: 'Company Logo',
+          src: 'img/logo.svg', // Optionally add a logo to the footer
+          href: '/', // Clicking the logo redirects to the homepage
+        },
         copyright: `Copyright © ${new Date().getFullYear()} Your Organization. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
+        darkTheme: prismThemes.dracula
+      },
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: false, // Allow users to toggle between light and dark modes
       },
     }),
 };

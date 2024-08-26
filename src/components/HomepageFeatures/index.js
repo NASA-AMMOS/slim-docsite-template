@@ -4,56 +4,56 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Seamless Integration',
-    Svg: () => <img src="/img/200x200.svg" alt="Seamless Integration" />, // Placeholder image
+    title: 'Feature 1',
+    Svg: () => <img src="/img/200x200.svg" alt="Feature 1" />, // Placeholder image
     description: (
       <>
-        Our product integrates effortlessly with your existing systems, ensuring a smooth and hassle-free setup.
+        Description for Feature 1. Edit this text to describe the feature in detail.
       </>
     ),
   },
   {
-    title: 'High Performance',
-    Svg: () => <img src="/img/200x200.svg" alt="High Performance" />, // Placeholder image
+    title: 'Feature 2',
+    Svg: () => <img src="/img/200x200.svg" alt="Feature 2" />, // Placeholder image
     description: (
       <>
-        Experience lightning-fast performance and reliable uptime, so your business can keep moving at full speed.
+        Description for Feature 2. Edit this text to describe the feature in detail.
       </>
     ),
   },
   {
-    title: 'Customizable',
-    Svg: () => <img src="/img/200x200.svg" alt="Customizable" />, // Placeholder image
+    title: 'Feature 3',
+    Svg: () => <img src="/img/200x200.svg" alt="Feature 3" />, // Placeholder image
     description: (
       <>
-        Tailor the product to your exact needs with our flexible customization options, empowering you to create the perfect solution.
+        Description for Feature 3. Edit this text to describe the feature in detail.
       </>
     ),
   },
   {
-    title: 'Robust Security',
-    Svg: () => <img src="/img/200x200.svg" alt="Robust Security" />, // Placeholder image
+    title: 'Feature 4',
+    Svg: () => <img src="/img/200x200.svg" alt="Feature 4" />, // Placeholder image
     description: (
       <>
-        Protect your data with our industry-leading security features, ensuring your information remains safe and secure.
+        Description for Feature 4. Edit this text to describe the feature in detail.
       </>
     ),
   },
   {
-    title: 'User-Friendly Interface',
-    Svg: () => <img src="/img/200x200.svg" alt="User-Friendly Interface" />, // Placeholder image
+    title: 'Feature 5',
+    Svg: () => <img src="/img/200x200.svg" alt="Feature 5" />, // Placeholder image
     description: (
       <>
-        Enjoy a simple, intuitive interface designed for users of all skill levels, making it easy to get started right away.
+        Description for Feature 5. Edit this text to describe the feature in detail.
       </>
     ),
   },
   {
-    title: '24/7 Support',
-    Svg: () => <img src="/img/200x200.svg" alt="24/7 Support" />, // Placeholder image
+    title: 'Feature 6',
+    Svg: () => <img src="/img/200x200.svg" alt="Feature 6" />, // Placeholder image
     description: (
       <>
-        Our dedicated support team is available around the clock to assist you with any questions or issues you may encounter.
+        Description for Feature 6. Edit this text to describe the feature in detail.
       </>
     ),
   },
@@ -61,11 +61,11 @@ const FeatureList = [
 
 function Feature({Svg, title, description}) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
+    <div className={clsx('col col--4', styles.feature)}>
+      <div>
         <Svg className={styles.featureSvg} role="img" />
       </div>
-      <div className="text--center padding-horiz--md">
+      <div className={styles.featureContent}>
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
       </div>
@@ -77,6 +77,9 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
+        <div className={styles.sectionTitleContainer}>
+          <h2 className={styles.sectionTitle}>Features</h2>
+        </div>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
