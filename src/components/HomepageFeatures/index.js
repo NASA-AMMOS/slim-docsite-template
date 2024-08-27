@@ -78,7 +78,7 @@ export default function HomepageFeatures() {
     <section className={styles.features}>
       <div className="container">
         <div className={styles.sectionTitleContainer}>
-          <h2 className={styles.sectionTitle}>Features</h2>
+          <h2 className="sectionTitle">Features</h2>
         </div>
         <div className="row">
           {FeatureList.map((props, idx) => (

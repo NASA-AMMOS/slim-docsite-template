@@ -27,9 +27,9 @@
 .featureContent h3 {
   margin-bottom: 0.5rem; /* Adds space below the title */
   font-size: 1.5rem;
-  color: #333; /* Ensures text color is readable */
+}
+[data-theme='dark'] .featureContent h3 {
+  margin-bottom: 0.5rem; /* Adds space below the title */
+  font-size: 1.5rem;
 }
 
-.featureContent p {
-  color: #555; /* Softer color for the description text */
-}

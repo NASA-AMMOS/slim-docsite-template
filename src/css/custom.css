@@ -32,30 +32,58 @@
   --ifm-font-family-base: 'Open Sans', sans-serif;
 }
 
+/* Add styles for the navbar links */
+.navbar__link {
+  text-decoration: none; /* Remove underline by default */
+  color: inherit; /* Keep the link color consistent */
+  font-weight: 600; /* Optional: Add a bit of weight to the navbar links */
+}
+
+.navbar__link:hover {
+  text-decoration: underline; /* Add underline on hover */
+  color: inherit; /* Keep the color the same on hover */
+}
+
+/* Ensure the sidebar links follow the same pattern */
+.menu__link {
+  text-decoration: none; /* Remove underline by default */
+  color: inherit;
+  font-weight: 600;
+}
+
+.menu__link:hover {
+  text-decoration: underline; /* Add underline on hover */
+  color: inherit;
+}
+
+/* Ensure the sidebar links follow the same pattern */
+.navbar__title {
+  text-decoration: none; /* Remove underline by default */
+  color: inherit;
+  font-weight: 600;
+}
+
+.navbar__title:hover {
+  text-decoration: none; /* Add underline on hover */
+  color: inherit;
+}
+
+.navbar__brand {
+  text-decoration: none; /* Remove underline by default */
+  color: inherit;
+  font-weight: 1000;
+}
+
+.navbar__brand:hover {
+  text-decoration: none; /* Add underline on hover */
+  color: inherit;
+}
+
 /* Custom styles */
 .screenshot {
   max-width: 100%;
   height: auto;
   margin: 20px 0;
-}
-
-.heroBanner {
-  background-color: #00467a; /* Darker blue background for the hero banner */
-  color: #ffffff; /* Ensure text is white for readability */
-  padding: 60px 0; /* Increased padding for a more spacious layout */
-  text-align: center; /* Center-align text to match the PDF's clean layout */
-}
-
-.heroBanner h1 {
-  font-size: 2.5rem; /* Larger font size for the main title */
-  font-weight: 700; /* Bold title */
-  color: #ffffff; /* Ensure text is white for readability */
-}
-
-.heroBanner p {
-  font-size: 1.2rem; /* Slightly larger subtitle */
-  margin-top: 20px;
-  color: #ffffff; /* Ensure text is white for readability */
 }
 
 .features {
@@ -104,7 +132,15 @@
 .sectionTitle {
   font-size: 2rem; /* Consistent section title size */
   color: #00467a; /* Dark blue color for section titles */
-  text-align: center;
+  text-align: left;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+[data-theme='dark'] .sectionTitle {
+  font-size: 2rem; /* Consistent section title size */
+  color: #ffffff; /* Dark blue color for section titles */
+  text-align: left;
   margin-bottom: 2rem;
   font-weight: 600;
 }
