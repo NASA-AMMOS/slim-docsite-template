@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Feature 1',
-    Svg: () => <img src="/img/200x200.svg" alt="Feature 1" />, // Placeholder image
+    Svg: () => <img src="/img/200x200.png" alt="Feature 1" />, // Placeholder image
     description: (
       <>
         Description for Feature 1. Edit this text to describe the feature in detail.
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Feature 2',
-    Svg: () => <img src="/img/200x200.svg" alt="Feature 2" />, // Placeholder image
+    Svg: () => <img src="/img/200x200.png" alt="Feature 2" />, // Placeholder image
     description: (
       <>
         Description for Feature 2. Edit this text to describe the feature in detail.
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: 'Feature 3',
-    Svg: () => <img src="/img/200x200.svg" alt="Feature 3" />, // Placeholder image
+    Svg: () => <img src="/img/200x200.png" alt="Feature 3" />, // Placeholder image
     description: (
       <>
         Description for Feature 3. Edit this text to describe the feature in detail.
@@ -32,7 +32,7 @@ const FeatureList = [
   },
   {
     title: 'Feature 4',
-    Svg: () => <img src="/img/200x200.svg" alt="Feature 4" />, // Placeholder image
+    Svg: () => <img src="/img/200x200.png" alt="Feature 4" />, // Placeholder image
     description: (
       <>
         Description for Feature 4. Edit this text to describe the feature in detail.
@@ -41,7 +41,7 @@ const FeatureList = [
   },
   {
     title: 'Feature 5',
-    Svg: () => <img src="/img/200x200.svg" alt="Feature 5" />, // Placeholder image
+    Svg: () => <img src="/img/200x200.png" alt="Feature 5" />, // Placeholder image
     description: (
       <>
         Description for Feature 5. Edit this text to describe the feature in detail.
@@ -50,7 +50,7 @@ const FeatureList = [
   },
   {
     title: 'Feature 6',
-    Svg: () => <img src="/img/200x200.svg" alt="Feature 6" />, // Placeholder image
+    Svg: () => <img src="/img/200x200.png" alt="Feature 6" />, // Placeholder image
     description: (
       <>
         Description for Feature 6. Edit this text to describe the feature in detail.

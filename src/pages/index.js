@@ -29,7 +29,7 @@ function HomepageHeader() {
         </div>
         <div className={styles.screenshotContainer}>
           <img
-            src="https://picsum.photos/600/400?random=1"
+            src="/img/800x400.png"
             alt="Product Screenshot"
             className={styles.screenshot}
           />
@@ -45,9 +45,9 @@ function CustomerLogos() {
       <div className="container">
         <h2 className="sectionTitle">(Optional) Used By</h2>
         <div className={styles.logos}>
-          <img src="https://picsum.photos/200?random=1" alt="Customer 1" />
-          <img src="https://picsum.photos/200?random=2" alt="Customer 2" />
-          <img src="https://picsum.photos/200?random=3" alt="Customer 3" />
+          <img src="/img/200x200.png" alt="Customer 1" />
+          <img src="/img/200x200.png" alt="Customer 2" />
+          <img src="/img/200x200.png" alt="Customer 3" />
         </div>
       </div>
     </section>
@@ -157,8 +157,8 @@ function Sponsors() {
       <div className="container">
         <h2 className="sectionTitle">Sponsorship</h2>
         <div className={styles.logos}>
-          <img src="https://picsum.photos/200?random=4" alt="Sponsor 1" />
-          <img src="https://picsum.photos/200?random=5" alt="Sponsor 2" />
+          <img src="/img/200x200.png" alt="Sponsor 1" />
+          <img src="/img/200x200.png" alt="Sponsor 2" />
         </div>
       </div>
     </section>

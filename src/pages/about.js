@@ -10,7 +10,7 @@ function TeamSection() {
         <p className={styles.sectionSubtitle}>Meet the team that makes everything possible.</p>
         <div className={styles.teamMembers}>
           <div className={styles.teamMember}>
-            <img src="https://picsum.photos/200?random=1" alt="Team Member 1" className={styles.teamMemberImage} />
+            <img src="/img/200x200.png" alt="Team Member 1" className={styles.teamMemberImage} />
             <h3>Team Member 1</h3>
             <p>Role or position</p>
           </div>
@@ -29,7 +29,7 @@ function ContributorsSection() {
         <p className={styles.sectionSubtitle}>These people have helped make this project possible.</p>
         <div className={styles.contributors}>
           <div className={styles.contributor}>
-            <img src="https://picsum.photos/200?random=2" alt="Contributor 1" className={styles.contributorImage} />
+            <img src="/img/200x200.png" alt="Contributor 1" className={styles.contributorImage} />
             <h3>Contributor 1</h3>
             <p>Role or contribution</p>
           </div>
