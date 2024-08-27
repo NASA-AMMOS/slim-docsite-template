@@ -6,7 +6,7 @@ function TeamSection() {
   return (
     <section className={styles.teamSection}>
       <div className="container">
-        <h2 className={styles.sectionTitle}>Our Team</h2>
+        <h2 className="sectionTitle">Our Team</h2>
         <p className={styles.sectionSubtitle}>Meet the team that makes everything possible.</p>
         <div className={styles.teamMembers}>
           <div className={styles.teamMember}>
@@ -25,7 +25,7 @@ function ContributorsSection() {
   return (
     <section className={styles.contributorsSection}>
       <div className="container">
-        <h2 className={styles.sectionTitle}>Additional Contributors</h2>
+        <h2 className="sectionTitle">Additional Contributors</h2>
         <p className={styles.sectionSubtitle}>These people have helped make this project possible.</p>
         <div className={styles.contributors}>
           <div className={styles.contributor}>
@@ -44,7 +44,7 @@ function CommunicationSection() {
   return (
     <section className={styles.communicationSection}>
       <div className="container">
-        <h2 className={styles.sectionTitle}>Stay Connected</h2>
+        <h2 className="sectionTitle">Stay Connected</h2>
         <p className={styles.sectionSubtitle}>Join our community and stay updated.</p>
         <ul className={styles.communicationLinks}>
           <li>

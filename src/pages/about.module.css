@@ -1,17 +1,18 @@
 .teamSection, .contributorsSection, .communicationSection {
-  padding: 60px 0; /* Increased padding for a more spacious feel */
-  background-color: #f5f5f5; /* Light background color for all sections */
+  padding: 60px 0;
+  background-color: #f5f5f5;
+  text-align: left; /* Left-aligns the content */
 }
 
 .teamMembers, .contributors {
   display: flex;
-  justify-content: center; /* Center align the content */
-  gap: 2rem; /* Space between team members/contributors */
+  justify-content: flex-start; /* Left-aligns the content within the section */
+  gap: 2rem;
   flex-wrap: wrap;
 }
 
 .teamMember, .contributor {
-  text-align: center;
+  text-align: left; /* Ensures each member/contributor content is left-aligned */
   margin: 20px;
 }
 
@@ -20,28 +21,20 @@
   width: 150px;
   height: 150px;
   object-fit: cover;
-  margin-bottom: 1rem; /* Added space below images for better layout */
-}
-
-.sectionTitle {
-  font-size: 2.5rem;
-  color: #00467a; /* Dark blue color matching PDF style */
-  text-align: center;
   margin-bottom: 1rem;
-  font-weight: 700; /* Bold and prominent titles */
 }
 
 .sectionSubtitle {
   font-size: 1.25rem;
-  color: #555; /* Softer gray for subtitles */
-  text-align: center;
-  margin-bottom: 3rem; /* Added space below subtitles */
+  color: #555;
+  text-align: left; /* Left-aligns the section subtitle */
+  margin-bottom: 3rem;
 }
 
 .communicationLinks {
   list-style: none;
   padding: 0;
-  text-align: center;
+  text-align: left; /* Left-aligns the links */
 }
 
 .communicationLinks li {
@@ -49,8 +42,8 @@
 }
 
 .communicationLinks a {
-  color: #00467a; /* Updated color to match PDF style */
-  font-weight: 600; /* Bolder font for better visibility */
+  color: #00467a;
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -58,7 +51,6 @@
   text-decoration: underline;
 }
 
-/* General styling for consistent spacing and alignment */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -67,5 +59,5 @@
 
 .mainContent {
   padding: 4rem 0;
-  background-color: #ffffff; /* White background for a clean look */
+  background-color: #ffffff;
 }
