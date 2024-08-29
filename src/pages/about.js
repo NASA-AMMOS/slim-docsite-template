@@ -57,7 +57,7 @@ function CommunicationSection() {
             <a href="https://github.com/your-org/your-repo/issues">Issue Tracker</a>
           </li>
           <li>
-            <a href="/docs/intro">Documentation</a>
+            <a href="/docs">Documentation</a>
           </li>
           <li>
             <a href="https://twitter.com/yourhandle">Twitter</a>
