@@ -84,7 +84,7 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          {to: '/blog', label: 'News/Blog', position: 'left'},
+          {to: '/blog', label: 'News', position: 'left'},
           {to: '/about', label: 'About', position: 'left'},
           {
             href: 'https://github.com/[GITHUB_ORG]/[GITHUB_REPO]',
@@ -110,7 +110,7 @@ const config = {
                 to: '/docs',
               },
               {
-                label: 'Blog',
+                label: 'News',
                 to: '/blog',
               },
             ],

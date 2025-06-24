@@ -148,7 +148,7 @@ function LearnMore() {
                 </li>
                 <li>
                   <Link to="/blog" className={styles.link}>
-                    <span className={styles.linkIcon}>📰</span> News and Updates
+                    <span className={styles.linkIcon}>📰</span> News
                   </Link>
                 </li>
               </ul>
