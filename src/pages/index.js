@@ -15,9 +15,9 @@ function HomepageHeader() {
         <div className={styles.heroContent}>
           <div className={styles.heroText}>
             <Heading as="h1" className={styles.heroTitle}>
-              {{PROJECT_NAME}}
+              [PROJECT_NAME]
             </Heading>
-            <p className={styles.heroSubtitle}>{{PROJECT_DESCRIPTION}}</p>
+            <p className={styles.heroSubtitle}>[PROJECT_DESCRIPTION]</p>
             <div className={styles.buttons}>
               <Link className="button button--secondary button--lg" to="/docs">
                 🚀 Get Started
@@ -32,8 +32,8 @@ function HomepageHeader() {
           </div>
           <div className={styles.heroImage}>
             <img
-              src="{{HERO_IMAGE_URL}}"
-              alt="{{PROJECT_NAME}} Logo"
+              src="[HERO_IMAGE_URL]"
+              alt="[PROJECT_NAME] Logo"
               className={styles.logoImage}
             />
           </div>
@@ -50,10 +50,10 @@ function ProjectHighlight() {
         <div className={styles.highlightContainer}>
           <div className={styles.highlightContent}>
             <Heading as="h2" className={styles.highlightTitle}>
-              {{HIGHLIGHT_TITLE}}
+              [HIGHLIGHT_TITLE]
             </Heading>
             <p className={styles.highlightText}>
-              {{HIGHLIGHT_DESCRIPTION}}
+              [HIGHLIGHT_DESCRIPTION]
             </p>
             <Link className="button button--primary" to="/docs">
               Learn How It Works
@@ -61,16 +61,16 @@ function ProjectHighlight() {
           </div>
           <div className={styles.highlightStats}>
             <div className={styles.statItem}>
-              <span className={styles.statNumber}>{{STAT_1_NUMBER}}</span>
-              <span className={styles.statLabel}>{{STAT_1_LABEL}}</span>
+              <span className={styles.statNumber}>[STAT_1_NUMBER]</span>
+              <span className={styles.statLabel}>[STAT_1_LABEL]</span>
             </div>
             <div className={styles.statItem}>
-              <span className={styles.statNumber}>{{STAT_2_NUMBER}}</span>
-              <span className={styles.statLabel}>{{STAT_2_LABEL}}</span>
+              <span className={styles.statNumber}>[STAT_2_NUMBER]</span>
+              <span className={styles.statLabel}>[STAT_2_LABEL]</span>
             </div>
             <div className={styles.statItem}>
-              <span className={styles.statNumber}>{{STAT_3_NUMBER}}</span>
-              <span className={styles.statLabel}>{{STAT_3_LABEL}}</span>
+              <span className={styles.statNumber}>[STAT_3_NUMBER]</span>
+              <span className={styles.statLabel}>[STAT_3_LABEL]</span>
             </div>
           </div>
         </div>
@@ -85,14 +85,14 @@ function GetStarted() {
     <section className={styles.getStarted}>
       <div className="container">
         <Heading as="h2" className={styles.sectionTitle}>
-          Get Started with {{PROJECT_NAME}}
+          Get Started with [PROJECT_NAME]
         </Heading>
         <div className={styles.getStartedGrid}>
           <div className={styles.getStartedCard}>
             <div className={styles.cardIcon}>📋</div>
             <Heading as="h3" className={styles.cardTitle}>For Users</Heading>
             <p className={styles.cardDescription}>
-              Learn how to install, configure and use {{PROJECT_NAME}} for your needs.
+              Learn how to install, configure and use [PROJECT_NAME] for your needs.
             </p>
             <Link to="/docs/user" className={styles.cardLink}>
               User Guide <span className={styles.arrowIcon}>→</span>
@@ -102,7 +102,7 @@ function GetStarted() {
             <div className={styles.cardIcon}>⚙️</div>
             <Heading as="h3" className={styles.cardTitle}>For Developers</Heading>
             <p className={styles.cardDescription}>
-              Explore the API, create plugins, and customize {{PROJECT_NAME}} for specific requirements.
+              Explore the API, create plugins, and customize [PROJECT_NAME] for specific requirements.
             </p>
             <Link to="/docs/developer" className={styles.cardLink}>
               Developer Guide <span className={styles.arrowIcon}>→</span>
@@ -129,7 +129,7 @@ function LearnMore() {
     <section className={styles.learnMore}>
       <div className="container">
         <Heading as="h2" className={styles.sectionTitle}>
-          Learn More About {{PROJECT_NAME}}
+          Learn More About [PROJECT_NAME]
         </Heading>
         <div className={styles.learnMoreContent}>
           <div className={styles.learnMoreLinks}>
@@ -157,12 +157,12 @@ function LearnMore() {
               <Heading as="h3" className={styles.linkGroupTitle}>Community</Heading>
               <ul className={styles.linkList}>
                 <li>
-                  <Link to="{{GITHUB_URL}}/discussions" className={styles.link}>
+                  <Link to="[GITHUB_URL]/discussions" className={styles.link}>
                     <span className={styles.linkIcon}>💬</span> Discussion Thread (GitHub)
                   </Link>
                 </li>
                 <li>
-                  <Link to="{{COMMUNITY_CHAT_URL}}" className={styles.link}>
+                  <Link to="[COMMUNITY_CHAT_URL]" className={styles.link}>
                     <span className={styles.linkIcon}>🔗</span> Team Communication
                   </Link>
                 </li>
@@ -175,7 +175,7 @@ function LearnMore() {
             </div>
           </div>
           <div className={styles.callToAction}>
-            <p>Ready to get started with {{PROJECT_NAME}}?</p>
+            <p>Ready to get started with [PROJECT_NAME]?</p>
             <Link to="/docs/installation" className="button button--primary button--lg">
               Get Started Now
             </Link>
@@ -191,7 +191,7 @@ export default function Home() {
   return (
     <Layout
       title={`Welcome to ${siteConfig.title}`}
-      description="{{PROJECT_DESCRIPTION}}">
+      description="[PROJECT_DESCRIPTION]">
       <HomepageHeader />
       <main>
         <ProjectHighlight />

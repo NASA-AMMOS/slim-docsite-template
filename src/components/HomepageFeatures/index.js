@@ -4,56 +4,56 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: '{{FEATURE_1_TITLE}}',
-    Svg: () => <img src="/img/200x200.png" alt="{{FEATURE_1_TITLE}}" />,
+    title: '[FEATURE_1_TITLE]',
+    Svg: () => <img src="/img/200x200.png" alt="[FEATURE_1_TITLE]" />,
     description: (
       <>
-        {{FEATURE_1_DESCRIPTION}}
+        [FEATURE_1_DESCRIPTION]
       </>
     ),
   },
   {
-    title: '{{FEATURE_2_TITLE}}',
-    Svg: () => <img src="/img/200x200.png" alt="{{FEATURE_2_TITLE}}" />,
+    title: '[FEATURE_2_TITLE]',
+    Svg: () => <img src="/img/200x200.png" alt="[FEATURE_2_TITLE]" />,
     description: (
       <>
-        {{FEATURE_2_DESCRIPTION}}
+        [FEATURE_2_DESCRIPTION]
       </>
     ),
   },
   {
-    title: '{{FEATURE_3_TITLE}}',
-    Svg: () => <img src="/img/200x200.png" alt="{{FEATURE_3_TITLE}}" />,
+    title: '[FEATURE_3_TITLE]',
+    Svg: () => <img src="/img/200x200.png" alt="[FEATURE_3_TITLE]" />,
     description: (
       <>
-        {{FEATURE_3_DESCRIPTION}}
+        [FEATURE_3_DESCRIPTION]
       </>
     ),
   },
   {
-    title: '{{FEATURE_4_TITLE}}',
-    Svg: () => <img src="/img/200x200.png" alt="{{FEATURE_4_TITLE}}" />,
+    title: '[FEATURE_4_TITLE]',
+    Svg: () => <img src="/img/200x200.png" alt="[FEATURE_4_TITLE]" />,
     description: (
       <>
-        {{FEATURE_4_DESCRIPTION}}
+        [FEATURE_4_DESCRIPTION]
       </>
     ),
   },
   {
-    title: '{{FEATURE_5_TITLE}}',
-    Svg: () => <img src="/img/200x200.png" alt="{{FEATURE_5_TITLE}}" />,
+    title: '[FEATURE_5_TITLE]',
+    Svg: () => <img src="/img/200x200.png" alt="[FEATURE_5_TITLE]" />,
     description: (
       <>
-        {{FEATURE_5_DESCRIPTION}}
+        [FEATURE_5_DESCRIPTION]
       </>
     ),
   },
   {
-    title: '{{FEATURE_6_TITLE}}',
-    Svg: () => <img src="/img/200x200.png" alt="{{FEATURE_6_TITLE}}" />,
+    title: '[FEATURE_6_TITLE]',
+    Svg: () => <img src="/img/200x200.png" alt="[FEATURE_6_TITLE]" />,
     description: (
       <>
-        {{FEATURE_6_DESCRIPTION}}
+        [FEATURE_6_DESCRIPTION]
       </>
     ),
   },

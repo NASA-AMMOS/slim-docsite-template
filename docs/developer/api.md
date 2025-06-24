@@ -7,6 +7,6 @@ sidebar_label: API
 
 # API Overview
 
-Welcome to the **{{PROJECT_NAME}}** API documentation.
+Welcome to the **[PROJECT_NAME]** API documentation.
 
 [INSERT_CONTENT]

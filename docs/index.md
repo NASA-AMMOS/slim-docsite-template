@@ -7,7 +7,7 @@ sidebar_label: Introduction
 
 # Welcome to the Documentation
 
-Welcome to the official documentation for **{{PROJECT_NAME}}**. {{PROJECT_OVERVIEW}}
+Welcome to the official documentation for **[PROJECT_NAME]**. [PROJECT_OVERVIEW]
 
 ## What You'll Find Here
 

@@ -6,7 +6,7 @@ sidebar_position: 1
 
 # Installation Guide
 
-Welcome to the Installation Guide! This document will walk you through the process of installing {{PROJECT_NAME}} on your system.
+Welcome to the Installation Guide! This document will walk you through the process of installing [PROJECT_NAME] on your system.
 
 ## Prerequisites
 
