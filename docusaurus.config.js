@@ -8,8 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Product Name',
-  tagline: 'Product tag line - one sentence description',
+  title: '{{PROJECT_NAME}}',
+  tagline: '{{PROJECT_DESCRIPTION}}',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -20,8 +20,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'your-org', // Update this to your GitHub org/user name.
-  projectName: 'your-repo', // Update this to your repo name.
+  organizationName: '{{GITHUB_ORG}}', // Usually your GitHub org/user name.
+  projectName: '{{GITHUB_REPO}}', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -41,7 +41,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/your-org/your-repo/tree/main/',
+            'https://github.com/{{GITHUB_ORG}}/{{GITHUB_REPO}}/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -52,7 +52,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/your-org/your-repo/tree/main/',
+            'https://github.com/{{GITHUB_ORG}}/{{GITHUB_REPO}}/tree/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -71,9 +71,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Product Name',
+        title: '{{PROJECT_NAME}}',
         logo: {
-          alt: 'Product Logo',
+          alt: '{{PROJECT_NAME}} Logo',
           src: 'img/logo.svg',
           href: '/', // Ensure clicking the logo returns to the homepage
         },
@@ -87,7 +87,7 @@ const config = {
           {to: '/blog', label: 'News/Blog', position: 'left'},
           {to: '/about', label: 'About', position: 'left'},
           {
-            href: 'https://github.com/your-org/your-repo',
+            href: 'https://github.com/{{GITHUB_ORG}}/{{GITHUB_REPO}}',
             label: 'GitHub',
             position: 'right',
           },
@@ -124,7 +124,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/your-org/your-repo',
+                href: 'https://github.com/{{GITHUB_ORG}}/{{GITHUB_REPO}}',
               },
               {
                 label: 'Twitter',

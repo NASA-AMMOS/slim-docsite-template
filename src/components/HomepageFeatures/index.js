@@ -4,56 +4,56 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Feature 1',
-    Svg: () => <img src="/img/200x200.png" alt="Feature 1" />, // Placeholder image
+    title: '{{FEATURE_1_TITLE}}',
+    Svg: () => <img src="/img/200x200.png" alt="{{FEATURE_1_TITLE}}" />,
     description: (
       <>
-        Description for Feature 1. Edit this text to describe the feature in detail.
+        {{FEATURE_1_DESCRIPTION}}
       </>
     ),
   },
   {
-    title: 'Feature 2',
-    Svg: () => <img src="/img/200x200.png" alt="Feature 2" />, // Placeholder image
+    title: '{{FEATURE_2_TITLE}}',
+    Svg: () => <img src="/img/200x200.png" alt="{{FEATURE_2_TITLE}}" />,
     description: (
       <>
-        Description for Feature 2. Edit this text to describe the feature in detail.
+        {{FEATURE_2_DESCRIPTION}}
       </>
     ),
   },
   {
-    title: 'Feature 3',
-    Svg: () => <img src="/img/200x200.png" alt="Feature 3" />, // Placeholder image
+    title: '{{FEATURE_3_TITLE}}',
+    Svg: () => <img src="/img/200x200.png" alt="{{FEATURE_3_TITLE}}" />,
     description: (
       <>
-        Description for Feature 3. Edit this text to describe the feature in detail.
+        {{FEATURE_3_DESCRIPTION}}
       </>
     ),
   },
   {
-    title: 'Feature 4',
-    Svg: () => <img src="/img/200x200.png" alt="Feature 4" />, // Placeholder image
+    title: '{{FEATURE_4_TITLE}}',
+    Svg: () => <img src="/img/200x200.png" alt="{{FEATURE_4_TITLE}}" />,
     description: (
       <>
-        Description for Feature 4. Edit this text to describe the feature in detail.
+        {{FEATURE_4_DESCRIPTION}}
       </>
     ),
   },
   {
-    title: 'Feature 5',
-    Svg: () => <img src="/img/200x200.png" alt="Feature 5" />, // Placeholder image
+    title: '{{FEATURE_5_TITLE}}',
+    Svg: () => <img src="/img/200x200.png" alt="{{FEATURE_5_TITLE}}" />,
     description: (
       <>
-        Description for Feature 5. Edit this text to describe the feature in detail.
+        {{FEATURE_5_DESCRIPTION}}
       </>
     ),
   },
   {
-    title: 'Feature 6',
-    Svg: () => <img src="/img/200x200.png" alt="Feature 6" />, // Placeholder image
+    title: '{{FEATURE_6_TITLE}}',
+    Svg: () => <img src="/img/200x200.png" alt="{{FEATURE_6_TITLE}}" />,
     description: (
       <>
-        Description for Feature 6. Edit this text to describe the feature in detail.
+        {{FEATURE_6_DESCRIPTION}}
       </>
     ),
   },
