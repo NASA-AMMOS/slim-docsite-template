@@ -15,12 +15,31 @@
   margin: 20px;
 }
 
-.teamMember img, .contributor img {
+.teamMember img, .contributor img, .teamMemberImage {
   border-radius: 50%;
   width: 150px;
   height: 150px;
   object-fit: cover;
   margin-bottom: 1rem;
+}
+
+.contributorList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.contributorList li {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.9rem;
+  color: var(--ifm-color-content);
 }
 
 .sectionSubtitle {

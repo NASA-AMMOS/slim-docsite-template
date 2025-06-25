@@ -6,10 +6,10 @@ function TeamSection() {
   return (
     <section className={styles.teamSection}>
       <div className="container">
-        <h2 className="sectionTitle">Top Contributors</h2>
-        <p className={styles.sectionSubtitle}>Meet the people who have made the most significant contributions to [PROJECT_NAME].</p>
+        <h2 className="sectionTitle">Team Members</h2>
+        <p className={styles.sectionSubtitle}>Meet the core team behind [PROJECT_NAME].</p>
         <div className={styles.teamMembers}>
-          [TOP_CONTRIBUTORS]
+          [TEAM_MEMBERS]
         </div>
       </div>
     </section>
@@ -20,10 +20,10 @@ function ContributorsSection() {
   return (
     <section className={styles.contributorsSection}>
       <div className="container">
-        <h2 className="sectionTitle">All Contributors</h2>
-        <p className={styles.sectionSubtitle}>Everyone who has contributed to [PROJECT_NAME].</p>
+        <h2 className="sectionTitle">Contributors</h2>
+        <p className={styles.sectionSubtitle}>Thank you to everyone who has contributed to [PROJECT_NAME] through code, documentation, and feedback.</p>
         <div className={styles.contributors}>
-          [ALL_CONTRIBUTORS]
+          [GIT_CONTRIBUTORS]
         </div>
       </div>
     </section>

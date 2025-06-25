@@ -1,23 +1,27 @@
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
+project-lead:
+  name: Project Lead
+  title: Technical Lead
+  url: https://github.com/[GITHUB_ORG]/[GITHUB_REPO]
+  image_url: /img/team/project-lead.png
   page: true
-  socials:
-    x: yangshunz
-    github: yangshun
 
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
-  page:
-    # customize the url of the author page at /blog/authors/<permalink>
-    permalink: '/all-sebastien-lorber-articles'
-  socials:
-    x: sebastienlorber
-    linkedin: sebastienlorber
-    github: slorber
-    newsletter: https://thisweekinreact.com
+code-maintainer-1:
+  name: Code Maintainer 1
+  title: Senior Developer
+  url: https://github.com/[GITHUB_ORG]/[GITHUB_REPO]
+  image_url: /img/team/maintainer-1.png
+  page: true
+
+developer-1:
+  name: Developer 1
+  title: Software Developer
+  url: https://github.com/[GITHUB_ORG]/[GITHUB_REPO]
+  image_url: /img/team/developer-1.png
+  page: true
+
+tester-1:
+  name: Tester 1
+  title: Quality Assurance Engineer
+  url: https://github.com/[GITHUB_ORG]/[GITHUB_REPO]
+  image_url: /img/team/tester-1.png
+  page: true

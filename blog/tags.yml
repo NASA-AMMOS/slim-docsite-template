@@ -1,19 +1,44 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+announcement:
+  label: Announcements
+  permalink: /announcement
+  description: Project announcements and major updates
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+getting-started:
+  label: Getting Started
+  permalink: /getting-started
+  description: Getting started guides and tutorials
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+features:
+  label: Features
+  permalink: /features
+  description: Feature highlights and deep dives
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+technical:
+  label: Technical
+  permalink: /technical
+  description: Technical discussions and implementation details
+
+development:
+  label: Development
+  permalink: /development
+  description: Development updates and behind-the-scenes content
+
+update:
+  label: Updates
+  permalink: /update
+  description: Regular project updates and progress reports
+
+community:
+  label: Community
+  permalink: /community
+  description: Community news, events, and highlights
+
+documentation:
+  label: Documentation
+  permalink: /documentation
+  description: Documentation improvements and guides
+
+interactive:
+  label: Interactive
+  permalink: /interactive
+  description: Interactive features and capabilities
