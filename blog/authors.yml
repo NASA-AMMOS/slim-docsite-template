@@ -1,27 +1,13 @@
-project-lead:
-  name: Project Lead
-  title: Technical Lead
-  url: https://github.com/[GITHUB_ORG]/[GITHUB_REPO]
-  image_url: /img/team/project-lead.png
+jane-doe:
+  name: Jane Doe
+  title: Technical Writer
+  url: https://github.com/janedoe
+  image_url: /img/team/jane-doe.png
   page: true
 
-code-maintainer-1:
-  name: Code Maintainer 1
-  title: Senior Developer
-  url: https://github.com/[GITHUB_ORG]/[GITHUB_REPO]
-  image_url: /img/team/maintainer-1.png
-  page: true
-
-developer-1:
-  name: Developer 1
-  title: Software Developer
-  url: https://github.com/[GITHUB_ORG]/[GITHUB_REPO]
-  image_url: /img/team/developer-1.png
-  page: true
-
-tester-1:
-  name: Tester 1
-  title: Quality Assurance Engineer
-  url: https://github.com/[GITHUB_ORG]/[GITHUB_REPO]
-  image_url: /img/team/tester-1.png
+john-smith:
+  name: John Smith
+  title: Developer Advocate
+  url: https://github.com/johnsmith
+  image_url: /img/team/john-smith.png
   page: true

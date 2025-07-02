@@ -22,7 +22,7 @@ function HomepageHeader() {
               <Link className="button button--secondary button--lg" to="/docs">
                 🚀 Get Started
               </Link>
-              <Link className="button button--secondary button--lg" to="/docs/installation">
+              <Link className="button button--secondary button--lg" to="/docs/user/installation">
                 📥 Install Now
               </Link>
               <Link className="button button--secondary button--lg" to="/docs/contributing">
@@ -114,7 +114,7 @@ function GetStarted() {
             <p className={styles.cardDescription}>
               Learn about testing procedures and explore examples to get started quickly.
             </p>
-            <Link to="/docs/testing" className={styles.cardLink}>
+            <Link to="/docs/developer/testing" className={styles.cardLink}>
               Testing Guide <span className={styles.arrowIcon}>→</span>
             </Link>
           </div>
@@ -176,7 +176,7 @@ function LearnMore() {
           </div>
           <div className={styles.callToAction}>
             <p>Ready to get started with [PROJECT_NAME]?</p>
-            <Link to="/docs/installation" className="button button--primary button--lg">
+            <Link to="/docs" className="button button--primary button--lg">
               Get Started Now
             </Link>
           </div>
