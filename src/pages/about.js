@@ -6,15 +6,10 @@ function TeamSection() {
   return (
     <section className={styles.teamSection}>
       <div className="container">
-        <h2 className="sectionTitle">Our Team</h2>
-        <p className={styles.sectionSubtitle}>Meet the team that makes everything possible.</p>
+        <h2 className="sectionTitle">Team Members</h2>
+        <p className={styles.sectionSubtitle}>Meet the core team behind [PROJECT_NAME].</p>
         <div className={styles.teamMembers}>
-          <div className={styles.teamMember}>
-            <img src="/img/200x200.png" alt="Team Member 1" className={styles.teamMemberImage} />
-            <h3>Team Member 1</h3>
-            <p>Role or position</p>
-          </div>
-          {/* Add more team members as needed */}
+          [TEAM_MEMBERS]
         </div>
       </div>
     </section>
@@ -25,47 +20,66 @@ function ContributorsSection() {
   return (
     <section className={styles.contributorsSection}>
       <div className="container">
-        <h2 className="sectionTitle">Additional Contributors</h2>
-        <p className={styles.sectionSubtitle}>These people have helped make this project possible.</p>
+        <h2 className="sectionTitle">Contributors</h2>
+        <p className={styles.sectionSubtitle}>Thank you to everyone who has contributed to [PROJECT_NAME] through code, documentation, and feedback.</p>
         <div className={styles.contributors}>
-          <div className={styles.contributor}>
-            <img src="/img/200x200.png" alt="Contributor 1" className={styles.contributorImage} />
-            <h3>Contributor 1</h3>
-            <p>Role or contribution</p>
-          </div>
-          {/* Add more contributors as needed */}
+          [GIT_CONTRIBUTORS]
         </div>
       </div>
     </section>
   );
 }
 
-function CommunicationSection() {
+function ContactSection() {
   return (
-    <section className={styles.communicationSection}>
+    <section className={styles.contactSection}>
       <div className="container">
-        <h2 className="sectionTitle">Stay Connected</h2>
-        <p className={styles.sectionSubtitle}>Join our community and stay updated.</p>
-        <ul className={styles.communicationLinks}>
-          <li>
-            <a href="https://slack.yourdomain.com">Slack</a>
-          </li>
-          <li>
-            <a href="https://github.com/your-org/your-repo">GitHub</a>
-          </li>
-          <li>
-            <a href="https://github.com/your-org/your-repo/issues">Issue Tracker</a>
-          </li>
-          <li>
-            <a href="/docs">Documentation</a>
-          </li>
-          <li>
-            <a href="https://twitter.com/yourhandle">Twitter</a>
-          </li>
-          <li>
-            <a href="mailto:contact@yourdomain.com">Mailing List</a>
-          </li>
-        </ul>
+        <h2 className="sectionTitle">Get in Touch</h2>
+        <p className={styles.sectionSubtitle}>Have questions or want to get involved? Here's how to reach us.</p>
+        <div className={styles.contactGrid}>
+          <div className={styles.contactCard}>
+            <h3>Community</h3>
+            <ul className={styles.contactLinks}>
+              <li>
+                <a href="[GITHUB_URL]">GitHub Repository</a>
+              </li>
+              <li>
+                <a href="[GITHUB_URL]/issues">Report Issues</a>
+              </li>
+              <li>
+                <a href="[GITHUB_URL]/discussions">Discussions</a>
+              </li>
+            </ul>
+          </div>
+          <div className={styles.contactCard}>
+            <h3>Support</h3>
+            <ul className={styles.contactLinks}>
+              <li>
+                <a href="/docs">Documentation</a>
+              </li>
+              <li>
+                <a href="/docs/faqs">FAQ</a>
+              </li>
+              <li>
+                <a href="mailto:[CONTACT_EMAIL]">Email Support</a>
+              </li>
+            </ul>
+          </div>
+          <div className={styles.contactCard}>
+            <h3>Connect</h3>
+            <ul className={styles.contactLinks}>
+              <li>
+                <a href="[SLACK_URL]">Slack Community</a>
+              </li>
+              <li>
+                <a href="[TWITTER_URL]">Twitter</a>
+              </li>
+              <li>
+                <a href="[MAILING_LIST_URL]">Mailing List</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   );
@@ -79,7 +93,7 @@ export default function About() {
       <main className={styles.mainContent}>
         <TeamSection />
         <ContributorsSection />
-        <CommunicationSection />
+        <ContactSection />
       </main>
     </Layout>
   );

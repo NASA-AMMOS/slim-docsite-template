@@ -10,111 +10,112 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero', styles.heroBanner)}>
+    <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <Heading as="h1" className={styles.heroTitle}>
-          {siteConfig.title}
-        </Heading>
-        <p className={styles.heroSubtitle}>{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link className="button button--primary button--lg" to="/docs">
-            ✅ Get Started
-          </Link>
-          <Link className="button button--primary button--lg" to="/docs/download">
-            ⬇️ Download Now
-          </Link>
-          <Link className="button button--primary button--lg" to="/about">
-            📪 Contact
-          </Link>
-        </div>
-        <div className={styles.screenshotContainer}>
-          <img
-            src="/img/800x400.png"
-            alt="Product Screenshot"
-            className={styles.screenshot}
-          />
+        <div className={styles.heroContent}>
+          <div className={styles.heroText}>
+            <Heading as="h1" className={styles.heroTitle}>
+              [PROJECT_NAME]
+            </Heading>
+            <p className={styles.heroSubtitle}>[PROJECT_DESCRIPTION]</p>
+            <div className={styles.buttons}>
+              <Link className="button button--secondary button--lg" to="/docs">
+                🚀 Get Started
+              </Link>
+              <Link className="button button--secondary button--lg" to="/docs/user/installation">
+                📥 Install Now
+              </Link>
+              <Link className="button button--secondary button--lg" to="/docs/contributing">
+                🤝 Contribute
+              </Link>
+            </div>
+          </div>
+          <div className={styles.heroImage}>
+            <img
+              src="[HERO_IMAGE_URL]"
+              alt="[PROJECT_NAME] Logo"
+              className={styles.logoImage}
+            />
+          </div>
         </div>
       </div>
     </header>
   );
 }
 
-function CustomerLogos() {
+function ProjectHighlight() {
   return (
-    <section className={styles.customerLogos}>
+    <section className={styles.missionHighlight}>
       <div className="container">
-        <h2 className="sectionTitle">(Optional) Used By</h2>
-        <div className={styles.logos}>
-          <img src="/img/200x200.png" alt="Customer 1" />
-          <img src="/img/200x200.png" alt="Customer 2" />
-          <img src="/img/200x200.png" alt="Customer 3" />
+        <div className={styles.highlightContainer}>
+          <div className={styles.highlightContent}>
+            <Heading as="h2" className={styles.highlightTitle}>
+              [HIGHLIGHT_TITLE]
+            </Heading>
+            <p className={styles.highlightText}>
+              [HIGHLIGHT_DESCRIPTION]
+            </p>
+            <Link className="button button--primary" to="/docs">
+              Learn How It Works
+            </Link>
+          </div>
+          <div className={styles.highlightStats}>
+            <div className={styles.statItem}>
+              <span className={styles.statNumber}>[STAT_1_NUMBER]</span>
+              <span className={styles.statLabel}>[STAT_1_LABEL]</span>
+            </div>
+            <div className={styles.statItem}>
+              <span className={styles.statNumber}>[STAT_2_NUMBER]</span>
+              <span className={styles.statLabel}>[STAT_2_LABEL]</span>
+            </div>
+            <div className={styles.statItem}>
+              <span className={styles.statNumber}>[STAT_3_NUMBER]</span>
+              <span className={styles.statLabel}>[STAT_3_LABEL]</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   );
 }
 
-function Testimonials() {
-  return (
-    <section className={styles.testimonials}>
-      <div className="container">
-        <h2 className="sectionTitle">(Optional) What People Say</h2>
-        <div className={styles.quotes}>
-          <blockquote>
-            <p>"This product is amazing!"</p>
-            <cite>- Happy Customer</cite>
-          </blockquote>
-          <blockquote>
-            <p>"It has transformed the way we work."</p>
-            <cite>- Satisfied Client</cite>
-          </blockquote>
-          <blockquote>
-            <p>"Incredible support and features."</p>
-            <cite>- Loyal User</cite>
-          </blockquote>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function ProductVideo() {
-  return (
-    <section className={styles.productVideo}>
-      <div className="container">
-        <h2 className="sectionTitle">See It in Action</h2>
-        <div className={styles.videoWrapper}>
-          <iframe
-            width="100%"
-            height="400"
-            src="https://www.youtube.com/embed/your-video-id"
-            title="Product Video"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
-      </div>
-    </section>
-  );
-}
 
 function GetStarted() {
   return (
     <section className={styles.getStarted}>
       <div className="container">
-        <h2 className="sectionTitle">Get Started</h2>
-        <div className={styles.getStartedContent}>
-          <div>
-            <h3>For Users</h3>
-            <Link to="/docs/user" className={styles.link}>
-              Read the Users Guide
+        <Heading as="h2" className={styles.sectionTitle}>
+          Get Started with [PROJECT_NAME]
+        </Heading>
+        <div className={styles.getStartedGrid}>
+          <div className={styles.getStartedCard}>
+            <div className={styles.cardIcon}>📋</div>
+            <Heading as="h3" className={styles.cardTitle}>For Users</Heading>
+            <p className={styles.cardDescription}>
+              Learn how to install, configure and use [PROJECT_NAME] for your needs.
+            </p>
+            <Link to="/docs/user" className={styles.cardLink}>
+              User Guide <span className={styles.arrowIcon}>→</span>
             </Link>
           </div>
-          <div>
-            <h3>For Developers</h3>
-            <Link to="/docs/developer" className={styles.link}>
-              Read the Developers Guide
+          <div className={styles.getStartedCard}>
+            <div className={styles.cardIcon}>⚙️</div>
+            <Heading as="h3" className={styles.cardTitle}>For Developers</Heading>
+            <p className={styles.cardDescription}>
+              Explore the API, create plugins, and customize [PROJECT_NAME] for specific requirements.
+            </p>
+            <Link to="/docs/developer" className={styles.cardLink}>
+              Developer Guide <span className={styles.arrowIcon}>→</span>
+            </Link>
+          </div>
+          <div className={styles.getStartedCard}>
+            <div className={styles.cardIcon}>🧪</div>
+            <Heading as="h3" className={styles.cardTitle}>Testing & Examples</Heading>
+            <p className={styles.cardDescription}>
+              Learn about testing procedures and explore examples to get started quickly.
+            </p>
+            <Link to="/docs/developer/testing" className={styles.cardLink}>
+              Testing Guide <span className={styles.arrowIcon}>→</span>
             </Link>
           </div>
         </div>
@@ -127,37 +128,58 @@ function LearnMore() {
   return (
     <section className={styles.learnMore}>
       <div className="container">
-        <h2 className="sectionTitle">Learn More</h2>
-        <ul className={styles.learnMoreList}>
-          <li>
-            <Link to="https://slack.yourdomain.com" className={styles.link}>
-              Team Communication (Slack)
+        <Heading as="h2" className={styles.sectionTitle}>
+          Learn More About [PROJECT_NAME]
+        </Heading>
+        <div className={styles.learnMoreContent}>
+          <div className={styles.learnMoreLinks}>
+            <div className={styles.linkGroup}>
+              <Heading as="h3" className={styles.linkGroupTitle}>Resources</Heading>
+              <ul className={styles.linkList}>
+                <li>
+                  <Link to="/docs/faqs" className={styles.link}>
+                    <span className={styles.linkIcon}>❓</span> Frequently Asked Questions
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/docs/developer/api" className={styles.link}>
+                    <span className={styles.linkIcon}>📘</span> API Documentation
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/blog" className={styles.link}>
+                    <span className={styles.linkIcon}>📰</span> News
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className={styles.linkGroup}>
+              <Heading as="h3" className={styles.linkGroupTitle}>Community</Heading>
+              <ul className={styles.linkList}>
+                <li>
+                  <Link to="[GITHUB_URL]/discussions" className={styles.link}>
+                    <span className={styles.linkIcon}>💬</span> Discussion Thread (GitHub)
+                  </Link>
+                </li>
+                <li>
+                  <Link to="[COMMUNITY_CHAT_URL]" className={styles.link}>
+                    <span className={styles.linkIcon}>🔗</span> Team Communication
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/docs/contributing" className={styles.link}>
+                    <span className={styles.linkIcon}>🤝</span> Contribution Guide
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className={styles.callToAction}>
+            <p>Ready to get started with [PROJECT_NAME]?</p>
+            <Link to="/docs" className="button button--primary button--lg">
+              Get Started Now
             </Link>
-          </li>
-          <li>
-            <Link to="https://github.com/your-org/your-repo/discussions" className={styles.link}>
-              Discussion Thread (GitHub)
-            </Link>
-          </li>
-          <li>
-            <Link to="/blog" className={styles.link}>
-              News and Updates
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </section>
-  );
-}
-
-function Sponsors() {
-  return (
-    <section className={styles.sponsors}>
-      <div className="container">
-        <h2 className="sectionTitle">Sponsorship</h2>
-        <div className={styles.logos}>
-          <img src="/img/200x200.png" alt="Sponsor 1" />
-          <img src="/img/200x200.png" alt="Sponsor 2" />
+          </div>
         </div>
       </div>
     </section>
@@ -167,16 +189,15 @@ function Sponsors() {
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <Layout title={`Welcome to ${siteConfig.title}`} description="Product tag line - one sentence description">
+    <Layout
+      title={`Welcome to ${siteConfig.title}`}
+      description="[PROJECT_DESCRIPTION]">
       <HomepageHeader />
       <main>
-        <CustomerLogos />
-        <Testimonials />
-        <ProductVideo />
+        <ProjectHighlight />
         <HomepageFeatures />
         <GetStarted />
         <LearnMore />
-        <Sponsors />
       </main>
     </Layout>
   );
